@@ -1,6 +1,6 @@
 # What : Python Pong game implementation 
 # Where : https://www.101computing.net/pong-tutorial-using-pygame-getting-started/
-# Why : For M4 we neeeded to play the Pong game with our arduino as the controller
+# Why : For M5 we neeeded to play the Pong game with our arduino as the controller
 #       we were allowed to find the Pong game online and then implement the bluetooth connection part
 #       this website was easy to follow along and used pygame which I have seen used before! 
 
@@ -63,13 +63,13 @@ def play(p1, p2):
                         carryOn=False  
 
         #Moving the paddle with arduino 
-        if p1.value >= .1 : # change 
-            paddle1.moveDown(7) #check direction
-        elif p1.value <= -.1 :
-            paddle1.moveUp(7)
+        if p1.value >= .5 : # change 
+            paddle1.moveUp(7) #check direction
+        elif p1.value <= -.5 :
+            paddle1.moveDown(7)
         
         #Moving the paddle with arduino 
-        if p2.value >= .1 : # change 
+        if p2.value >= .5 : # change 
             paddle2.moveDown(7) #check direction
         elif p2.value <= -.1 :
             paddle2.moveUp(7)
