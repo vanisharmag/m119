@@ -62,7 +62,7 @@ void loop() {
 
       if (IMU.accelerationAvailable()) {
         IMU.readAcceleration(ax, ay, az);
-        accelerometerCharacteristicX.writeValue(ax);
+        accelerometerCharacteristicX.writeValue(az);
       }
     }
   }
