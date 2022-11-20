@@ -70,9 +70,9 @@ def play(p1, p2):
         
         #Moving the paddle with arduino 
         if p2.value >= .5 : # change 
-            paddle2.moveDown(7) #check direction
-        elif p2.value <= -.1 :
-            paddle2.moveUp(7)
+            paddle2.moveUp(7) #check direction
+        elif p2.value <= -.5 :
+            paddle2.moveDown(7)
     
         # --- Game logic should go here
         all_sprites_list.update()
